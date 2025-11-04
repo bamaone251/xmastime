@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christmas Countdown 2025</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>🎄 Christmas Countdown 2025</h1>
+      <div id="countdown" aria-live="polite"></div>
+      <div class="controls">
+        <button id="prevDay" aria-label="Previous Day">◀</button>
+        <span id="dayLabel"></span>
+        <button id="nextDay" aria-label="Next Day">▶</button>
+        <label class="toggle">
+          <input type="checkbox" id="previewToggle">
+          <span>Preview all days</span>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <section class="stage">
+        <div id="svgHolder" class="card" role="img" aria-label="Funny Christmas illustration"></div>
+        <div class="actions">
+          <button id="playJingle">▶ Play Day Jingle</button>
+          <button id="stopJingle">■ Stop</button>
+        </div>
+        <p id="caption" class="caption"></p>
+      </section>
+
+      <section>
+        <h2>Days Until Christmas</h2>
+        <div id="calendar" class="calendar"></div>
+      </section>
+    </main>
+
+    <footer>
+      <small>All images and audio are generated on the fly—no external files—so it's fast, fun, and license‑free. ✅</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
